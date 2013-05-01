@@ -1,0 +1,27 @@
+{
+  "name": "xmlgoo",
+  "version": "1.0.0",
+  "description": "Adapter for libxml2",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "spec/buster test",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nearstate/xmlgoo.git"
+  },
+  "keywords": [
+    "xml",
+    "libxml"
+  ],
+  "contributors": [
+    "Dirk Rejahl",
+    "Andrew Gibson <andrew.gibson@nearstate.com>"
+  ],
+  "license": "MIT",
+  "gypfile": true,
+  "readmeFilename": "README.md",
+  "gitHead": "c7e2a21e323119a9e73731e8b6b39407b7e3ad6f",
+  "author": ""
+}

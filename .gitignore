@@ -1,0 +1,8 @@
+# Mac cruft
+.DS_*
+
+# Sublime text
+*.sublime*
+
+# Generated build
+build*
