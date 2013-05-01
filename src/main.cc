@@ -13,7 +13,6 @@ void init(Handle<Object> exports) {
 
 	exports->Set(String::NewSymbol("parse"), FunctionTemplate::New(Parse)->GetFunction());
 	exports->Set(String::NewSymbol("_disposeModule"), FunctionTemplate::New(Goo::DisposeModule)->GetFunction());
-	exports->Set(String::NewSymbol("_test1"), FunctionTemplate::New(Goo::Test1)->GetFunction());
 
 }
 

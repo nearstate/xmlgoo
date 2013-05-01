@@ -21,7 +21,6 @@ class Goo {
 		static v8::Handle<v8::Value> DisposeModule(const v8::Arguments& args);
 		static v8::Handle<v8::Value> BuildGooDocInstance(v8::Handle<v8::Value> xml);
 		static v8::Handle<v8::Value> BuildGooNodeInstance(GooDoc* doc, xmlNodePtr node);
-		static v8::Handle<v8::Value> Test1(const v8::Arguments& args);
 
 	private:
 		static v8::Persistent<v8::Function> BuildConstructor(const v8::Handle<v8::FunctionTemplate> constructorTemplate, char* className, const struct MethodDef * methodDefs, const int methodCount);
@@ -35,7 +34,6 @@ class Goo {
 		static v8::Handle<v8::Value> AppendChild(const v8::Arguments& args);
 		static v8::Handle<v8::Primitive> ThrowTypeError(char* message);
 		static v8::Handle<v8::Primitive> ThrowRangeError(char* message);
-		//static v8::Handle<v8::Value> ChangeOwnerTo(const v8::Arguments& args);
 		static v8::Handle<v8::Value> ChildNodes(const v8::Arguments& args);
 		static v8::Handle<v8::Value> CloneNode(const v8::Arguments& args);
 		static v8::Handle<v8::Value> CloneNodeForDocument(const v8::Arguments& args);
