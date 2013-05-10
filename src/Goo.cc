@@ -604,7 +604,7 @@ v8::Handle<v8::Value> Goo::SetAttribute(const v8::Arguments& args) {
 
 	if(args.Length()!=2) return scope.Close(Goo::ThrowTypeError((char*) "Please specify the attribute name and value to set as two string parameters to setAttribute"));
 	if(!args[0]->IsString() || args[0]->ToString()->Length() < 1) return scope.Close(Goo::ThrowTypeError((char*) "Please specify a string as the attribute name"));
-	if(!args[1]->IsString() || args[1]->ToString()->Length() < 1) return scope.Close(Goo::ThrowTypeError((char*) "Please specify a string as the value to set"));
+	if(!args[1]->IsString()) return scope.Close(Goo::ThrowTypeError((char*) "Please specify a string as the value to set"));
 
 	v8::Handle<v8::Value> ret;
 

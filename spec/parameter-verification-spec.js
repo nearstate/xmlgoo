@@ -63,12 +63,6 @@ describe( "Given an element in a document", function() {
 	testInvalid( "cloneNode", [ ], "no parameters", "true or false");
 	testInvalid( "cloneNode", [ 42 ], "a number", "true or false");
 
-	// testInvalid( "changeOwnerTo", [ null ], "Null", "expects a document" );
-	// testInvalid( "changeOwnerTo", [ "" ], "an empty string", "expects a document");
-	// testInvalid( "changeOwnerTo", [ ], "no parameters", "expects a document");
-	// testInvalid( "changeOwnerTo", [ 42 ], "a number", "expects a document");
-	// testInvalid( "changeOwnerTo", function() { return [ this.doc.documentElement() ]; }, "an element", "expects a document");
-
 	testInvalid( "getAttribute", [ null ], "Null", "attribute name" );
 	testInvalid( "getAttribute", [ "" ], "an empty string", "attribute name");
 	testInvalid( "getAttribute", [ ], "no parameters", "attribute name");
@@ -103,7 +97,6 @@ describe( "Given an element in a document", function() {
 	testInvalid( "setAttribute", [ "", "value" ], "an empty string as attribute name", "string as the attribute name");
 	testInvalid( "setAttribute", [ 42, "value" ], "a number as attribute name", "string as the attribute name");
 	testInvalid( "setAttribute", [ "key", null ], "Null attribute value", "string as the value to set");
-	testInvalid( "setAttribute", [ "key", "" ], "Null attribute value", "string as the value to set");
 	testInvalid( "setAttribute", [ "key", 42 ], "Null attribute value", "string as the value to set");
 
 	describe( "and a created element", function() {

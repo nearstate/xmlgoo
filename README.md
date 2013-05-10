@@ -13,9 +13,15 @@ The C++ has been kept as simple as we possibly can. It looks more like a C progr
 #### Tested
 
 ##### Functional tests
-There is a suite of over 200 scripted tests which have been designed to help protect the code from faulting. 
+There is a suite of over 200 scripted tests which have been designed to help protect the code from faulting.
 
 ##### Memory leak tested
 One of the drivers for this library is that available adapters for libxml2 leak quite badly under moderate load. This code is being run in a production system which undergoes load tests to detect memory leaks.
 
 ### TDB - Mapping of xmlgoo functions to libxml2 functions
+
+### Versions
+
+#### 1.0.2
+1. Incorrect validation behaviour of .setAttribute changed so that you can now pass an empty string as the value
+2. A few bits and pieces to clean up tests
