@@ -22,6 +22,10 @@ One of the drivers for this library is that available adapters for libxml2 leak 
 
 ### Versions
 
+#### 1.0.3
+1. Fixed bug whereby selectSingleNode (using and attribute match) would return an invalid node (and subsequently fault).
+
 #### 1.0.2
 1. Incorrect validation behaviour of .setAttribute changed so that you can now pass an empty string as the value
 2. A few bits and pieces to clean up tests
+

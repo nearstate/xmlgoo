@@ -593,7 +593,7 @@ v8::Handle<v8::Value> Goo::SelectSingleNode(const v8::Arguments& args) {
 }
 
 v8::Handle<v8::Value> Goo::SelectSingleNodeValueExtractor(GooDoc* gooDoc, xmlNodeSet* nodeSet) {
-	if(nodeSet && nodeSet->nodeTab)
+	if(nodeSet && nodeSet->nodeTab && nodeSet->nodeTab[0])
 		return BuildGooNodeInstance(gooDoc, nodeSet->nodeTab[0]);
 	else
 		return v8::Undefined();
