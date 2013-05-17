@@ -1,6 +1,6 @@
 {
   "name": "xmlgoo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Adapter for libxml2",
   "main": "lib/main.js",
   "scripts": {

@@ -22,6 +22,9 @@ One of the drivers for this library is that available adapters for libxml2 leak 
 
 ### Versions
 
+#### 1.0.4
+1. Upgrade includes to support gcc > 4.6
+
 #### 1.0.3
 1. Fixed bug whereby selectSingleNode (using and attribute match) would return an invalid node (and subsequently fault).
 
